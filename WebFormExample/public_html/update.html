@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <!DOCTYPE html>
+    <!--
+    To change this license header, choose License Headers in Project Properties.
+    To change this template file, choose Tools | Templates
+    and open the template in the editor.
+    -->
+    <html lang="en">
+        <head>
+            <title>Bootstrap Example</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet"
+                  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            
+            <style>
+            body{
+                background-color: lightyellow
+            }
+        </style>
+        </head>
+        <body>
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation"><a href="home.html">Home</a></li>
+                            <li role="presentation"><a href="put.html">PUT</a></li>
+                            <li role="presentation"><a href="get.html">GET</a></li>
+                            <li role="presentation"><a href="update.html">UPDATE</a></li>
+                            <li role="presentation"><a href="delete.html">REMOVE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h1 class="text-center text-danger">UPDATE DATA THAT IS SAVED THE THE POWERDB</h1>
+            <div class="container">
+                <form id="empForm" method="post">
+                    <div class="form-group">
+                        <span
+                            ><label for="empId">Employee ID:</label>
+                            <label id="empIdMsg"> </label
+                            ></span>
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="empId"
+                            id="empId"
+                            placeholder="Enter Employee ID"
+                            required
+                            />
+                    </div>
+                    <div class="form-group">
+                        <label for="empName">Employee Name:</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="empName"
+                            placeholder="Enter name to update"
+                            name="empName"
+                            />
+                    </div>
+                    <div class="form-group">
+                        <label for="empEmail">Email:</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="empEmail"
+                            placeholder="Enter email to update"
+                            name="empEmail"
+                            />
+                    </div>
+                    <input
+                        type="button"
+                        class="btn btn-primary"
+                        id="empSave"
+                        value="Update"
+                        onclick="updateRecord();"
+                        />
+                </form>
+            </div>
+
+            <script src="update.js"></script>
+            <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        </body>
+    </html>
