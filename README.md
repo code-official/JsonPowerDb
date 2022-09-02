@@ -4,7 +4,7 @@ This is a project build using jsonpowerdb+javascript,jqery
 SIMPLE MANAGEMENT SYSTEM USING JsonPowerDB.(CRUD)
 
 JsonPowerDB
-* Documentation Link
+* Documentation Link<br/>
 Login to Power DB :  http://api.login2explore.com:5577/user/index.html
 
 * EXTENSIONS USED(Google Chrome)
@@ -27,6 +27,12 @@ Login to Power DB :  http://api.login2explore.com:5577/user/index.html
 >It helps developers in faster coding, in-turn reduces development cost.
 >Simplest way to retrieve data in a JSON format.
 >Schema-free, Simple to use, Nimble and In-Memory database.
+
+<h1>**** HOW TO RUN THE PROJECT****</h1> <br/>
+1- Clone the Project or download the zip file<br/>
+2- Open it using netbeans ide<br/>
+3-Use the following credential in each file dbkey , dbname,dbrel  as per your database or you can run this too.<br/>
+4-Run file home.html and navigate through the project using navbar
 
 *PROJECT OVERVIEW
 
